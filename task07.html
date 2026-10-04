@@ -1,0 +1,110 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"
+                minlength="8" required>
+
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+
+            <br><br>
+
+            <label for="photo">Profile Photo:</label>
+            <input type="file" id="photo" name="photo">
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Course Information</legend>
+
+            <label for="course">Select Course:</label>
+
+            <select id="course" name="course">
+                <option value="">Select Course</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </select>
+
+            <br><br>
+
+            <p>Study Mode:</p>
+
+            <input type="radio" id="online" name="study_mode" value="online">
+            <label for="online">Online</label>
+
+            <input type="radio" id="onsite" name="study_mode" value="onsite">
+            <label for="onsite">On-site</label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Skills</legend>
+
+            <input type="checkbox" id="html_skill" name="skills" value="html">
+            <label for="html_skill">HTML</label>
+
+            <input type="checkbox" id="css_skill" name="skills" value="css">
+            <label for="css_skill">CSS</label>
+
+            <input type="checkbox" id="computer_skill" name="skills" value="computer">
+            <label for="computer_skill">Computer Basics</label>
+
+        </fieldset>
+
+        <br>
+
+        <label for="address">Address:</label>
+        <br>
+
+        <textarea id="address" name="address" rows="5" cols="30"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+
+</html>
+```
